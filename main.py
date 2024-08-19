@@ -42,7 +42,7 @@ def undo():
 
 root = Tk()
 root.configure(background='black')
-root.title("Calculator App")
+root.title("Calculator App Using Tkinter")
 style = ttk.Style()
 style.theme_use('clam')
 
@@ -75,16 +75,16 @@ for x in range(3):
         button.grid(row=x+2, column=y, padx=6, pady=3)
         counter += 1
 
-last_button = ttk.Button(text='0', style='TButton', command=lambda: get_number(0))
+last_button = ttk.Button(text='0️⃣', style='TButton', command=lambda: get_number(0))
 last_button.grid(row=5, column=1, padx=6, pady=3)
 
 ac_button = ttk.Button(text="AC", style='TButton', width=12, command=clear_all)
 ac_button.grid(row=5, column=4, columnspan=2)
 
-equal_to_button = ttk.Button(text="=", style='TButton', command=calculate)
+equal_to_button = ttk.Button(text="🟰", style='TButton', command=calculate)
 equal_to_button.grid(row=5, column=0)
 
-undo_button = ttk.Button(text="⬅", style='TButton', command=undo)
+undo_button = ttk.Button(text="⬅️", style='TButton', command=undo)
 undo_button.grid(row=5, column=2)
 
 
